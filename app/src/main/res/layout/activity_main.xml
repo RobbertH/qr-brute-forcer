@@ -29,8 +29,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="222dp"
-        android:layout_height="213dp"
+        android:layout_width="276dp"
+        android:layout_height="278dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,6 +55,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/speedSeekBar" />
 
+    <SeekBar
+        android:id="@+id/qrSizeSeekBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/stringLengthTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stringLengthSeekBar" />
+
     <TextView
         android:id="@+id/speedTextView"
         android:layout_width="wrap_content"
@@ -76,5 +85,16 @@
         app:layout_constraintStart_toEndOf="@+id/stringLengthSeekBar"
         app:layout_constraintTop_toBottomOf="@+id/speedTextView"
         tools:text="length" />
+
+    <TextView
+        android:id="@+id/qrSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/stringLengthSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/stringLengthTextView"
+        tools:text="QR size" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
